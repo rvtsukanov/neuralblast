@@ -49,4 +49,4 @@ nanoset = PushkinSet(type='train')
 nanoset_test = PushkinSet(type='test')
 
 train = DataLoader(nanoset, batch_size=config.batch_size, shuffle=True, num_workers=4)
-test = DataLoader(nanoset_test, batch_size=config.batch_size, shuffle=True, num_workers=4)
+test = DataLoader(nanoset_test, batch_size=config.batch_size, shuffle=False, num_workers=4)
